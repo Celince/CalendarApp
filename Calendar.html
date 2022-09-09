@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="Calendar.js"></script>
+    <link rel="stylesheet" href="Calendar.css">
+</head>
+<body onload="displayDate()">
+    <div class="frame">Calendar</div>
+    <div class="calendar">
+        <div class="month">
+            <button class="prev" id="prev" onclick="prevWeek()">Previous</button>
+            <div class="center">
+                <div class="date" id ="monthdate">
+                <h1></h1>
+                </div>
+                <div class="yeardate" id ="year">
+                    <h2></h2>
+                </div>
+            </div>
+            
+            <button class="next" id="next" onclick="nextWeek()">Next</button>
+        </div>
+        
+       
+        <table class ="table" id="table">
+            <tr class = "weekdays" id="days">
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+
+        </table>
+        <br>
+        <div class = "formframe">
+            <form class="form">
+                <label for="fname">Date:</label>
+                <input type="date" class="inpdate" id="inpdate" value="Date"><br><br>
+                <label for="lname">Time:</label>
+                <input type="time" class="inptime" id="inptime" value="Time"><br><br>
+                <label for="lname">Description:</label>
+                <input type="text" id="inpdes" class="inpdes" value=""><br><br>
+                <input type="button" id="addevent" class="updatebtn" value="Add Event" onclick="updateAlert()">
+              </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
